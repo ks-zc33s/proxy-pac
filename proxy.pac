@@ -7,7 +7,7 @@ function FindProxyForURL(url, host) {
     host = host.toLowerCase();
 
     if (host === "ei-sol.zac.ai" || dnsDomainIs(host, "e-staffing.ne.jp")) {
-        return "PROXY 192.168.52.132:8080";
+        return failover;
     }
 
     return "DIRECT";
