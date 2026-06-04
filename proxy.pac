@@ -6,7 +6,7 @@ function FindProxyForURL(url, host) {
 
     host = host.toLowerCase();
 
-    if (host === "ei-sol.zac.ai" || dnsDomainIs(host, "e-staffing.ne.jp")) {
+    if (dnsDomainIs(host, "zac.ai") || dnsDomainIs(host, "e-staffing.ne.jp")) {
         return failover;
     }
 
